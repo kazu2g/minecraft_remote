@@ -45,8 +45,19 @@ display2 = BufferDisplay(mc, anchor_position=ap2,
 msg = datetime.datetime.now().strftime("%Y-%m-%d")
 display1.update(msg, block_letters=param.IRON_BLOCK)
 
+
+num_of_letters = 5
+ap3 = (0,110,28)
+display3 = BufferDisplay(mc, anchor_position=ap3,
+                block_frame=param.IRON_BLOCK, num_of_letters=5)
+
+c = 0    
 while True:
     msg = time.strftime("%H:%M:%S")
     display2.update(msg, block_letters=param.SEA_LANTERN_BLOCK)
     # display2.update(msg, block_letters=param.GLOWSTONE)
-    time.sleep(0.1)  # Rest for a while before drawing again.
+
+    msg1 = str(c)
+    display3.update(msg1, block_letters=param.SEA_LANTERN_BLOCK)
+    c += 1
+    time.sleep(0.8)  # Rest for a while before drawing again.
