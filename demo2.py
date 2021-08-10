@@ -15,7 +15,7 @@ You can use numbers, "-", ":", and " ". Or, make your own letters.
 # for Minecraft Java Edition 1.16.5
 from mcje.minecraft import Minecraft
 import param_MCJE as param
-AP1 = (-19, 100, -5)  # top-left of the display frame
+AP1 = (0, 100, 0)  # top-left of the display frame
 
 # for Mineraft Java Edition 1.12.2
 # from mcje.minecraft import Minecraft
@@ -40,14 +40,26 @@ display1 = BufferDisplay(
                 mc, anchor_position=AP1,
                 num_of_letters=num_of_letters,
                 block_frame=param.GOLD_BLOCK)
+
+display2 = BufferDisplay(
+                mc, anchor_position=(0, 140, 0),
+                num_of_letters=5,
+                block_frame=param.SEA_LANTERN_BLOCK)
+
 msg = '1-23:45'
 display1.update(msg, block_letters=param.IRON_BLOCK)
 mc.postToChat(msg)
 
+display2.update('12345', block_letters=param.GRASS_BLOCK)
+
+
+
+
+
 time.sleep(4)
-msg = '6543210'
+msg = '062922'
 display1.update(msg, block_letters=param.GOLD_BLOCK)
 mc.postToChat(msg)
 
-time.sleep(4)
-display1.delete()
+# time.sleep(4)
+# display1.delete()
