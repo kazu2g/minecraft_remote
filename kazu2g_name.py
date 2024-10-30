@@ -53,39 +53,15 @@ WHITE = (250, 250, 250)
 pygame.init()
 
 
-clock = pygame.time.Clock()
-
-
 display1 = LCD_font_mc(mc)
 display1.init_col(
     BLOCK_SIZE=5, BLOCK_INTV=1, COLOR_ON=param.GOLD_BLOCK, COLOR_OFF=param.AIR)
 display1.init_row(X_ORG=8, Y_ORG=150,Z_ORG=10, COL_INTV=6)
 
 
-# display2 = LCD_font_mc(mc)
-# display2.init_col(
-#     BLOCK_SIZE=5, BLOCK_INTV=2, COLOR_ON=param.GOLD_BLOCK, COLOR_OFF=param.AIR)
-# display2.init_row(X_ORG=0, Y_ORG=65, COL_INTV=4)
+display1.drawtxt(text="name", startcol=0, axis="xy")
 
 
-
-display1.drawtxt(text="kazuhiro", startcol=0, axis="xy")
-
-# msg = "kazuhiro"
-# ii = 1
-# for cc in msg:
-#     code = ord(cc) - 0x61
-#     print(cc, code)
-#     display1.update_col(col=ii, code=code, axis="xy")
-#     ii += 1
-
-# display1.update_col(col=1, code=n, axis="xy")
-# display1.update_col(col=2, code=a, axis="xy")
-# display1.update_col(col=3, code=o, axis="xy")
-# display1.update_col(col=4, code=h, axis="xy")
-# display1.update_col(col=5, code=i, axis="xy")
-# display1.update_col(col=6, code=r, axis="xy")
-# display1.update_col(col=7, code=o, axis="xy")
 
 pygame.quit()
 

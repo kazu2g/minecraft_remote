@@ -1,21 +1,10 @@
 # handmade LCD font for pygame
 # 5x7ドットマトリクス
 
-
 # from math import log
-import sys
-import pygame
-from pygame.locals import Rect
 from mcje.minecraft import Minecraft
 import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
-# mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
-# result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
-# if ("Error" in result):
-#     sys.exit(result)
-# else:
-#     print(result)
-
 
 
 LCD_a = (0, 0, 0, 0, 0,
@@ -26,7 +15,6 @@ LCD_a = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 1, 0,)
 
-
 LCD_b = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
@@ -36,7 +24,6 @@ LCD_b = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          1, 1, 1, 0, 0)
 
-
 LCD_c = (0, 0, 0, 0, 0,
          0, 1, 1, 1, 0,
          1, 0, 0, 0, 1,
@@ -44,7 +31,6 @@ LCD_c = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 0, 1,
          0, 1, 1, 1, 0,)
-
 
 LCD_d = (0, 0, 0, 0, 0,
          0, 0, 0, 1, 0,
@@ -54,7 +40,6 @@ LCD_d = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 1, 0,)
 
-
 LCD_e = (0, 0, 0, 0, 0,
          0, 1, 1, 1, 0,
          1, 0, 0, 1, 0,
@@ -62,7 +47,6 @@ LCD_e = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 1, 0,)
-
 
 LCD_f = (0, 0, 0, 0, 0,
          0, 0, 1, 1, 0,
@@ -72,7 +56,6 @@ LCD_f = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 1, 0, 0,)
 
-
 LCD_g = (0, 1, 1, 0, 0,
          1, 0, 0, 1, 0,
          1, 0, 0, 1, 0,
@@ -80,7 +63,6 @@ LCD_g = (0, 1, 1, 0, 0,
          0, 0, 0, 1, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 0, 0, )
-
 
 LCD_h = (1, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
@@ -90,7 +72,6 @@ LCD_h = (1, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          1, 0, 0, 1, 0, )
 
-
 LCD_i = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 0, 0, 0,
@@ -98,7 +79,6 @@ LCD_i = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 1, 0, 0, )
-
 
 LCD_j = (0, 0, 0, 0, 0,
          0, 0, 0, 1, 0,
@@ -108,7 +88,6 @@ LCD_j = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 0, 0, )
 
-
 LCD_k = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
@@ -116,7 +95,6 @@ LCD_k = (0, 0, 0, 0, 0,
          1, 1, 0, 0, 0,
          1, 0, 1, 1, 0,
          1, 0, 0, 1, 0, )
-
 
 LCD_l = (0, 0, 0, 0, 0,
          0, 1, 0, 0, 0,
@@ -126,7 +104,6 @@ LCD_l = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 0, 1, 0, )
 
-
 LCD_m = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          1, 1, 1, 1, 0,
@@ -134,7 +111,6 @@ LCD_m = (0, 0, 0, 0, 0,
          1, 0, 1, 0, 1,
          1, 0, 1, 0, 1,
          1, 0, 1, 0, 1,)
-
 
 LCD_n = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -144,7 +120,6 @@ LCD_n = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          1, 0, 0, 1, 0, )
 
-
 LCD_o = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          0, 1, 1, 1, 0,
@@ -152,7 +127,6 @@ LCD_o = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 1,
          1, 0, 0, 0, 1,
          0, 1, 1, 1, 0, )
-
 
 LCD_p = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -162,7 +136,6 @@ LCD_p = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 0, 0,)
 
-
 LCD_q = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          0, 0, 1, 1, 1,
@@ -170,7 +143,6 @@ LCD_q = (0, 0, 0, 0, 0,
          0, 0, 1, 1, 1,
          0, 0, 0, 0, 1,
          0, 0, 0, 0, 1, )
-
 
 LCD_r = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -180,7 +152,6 @@ LCD_r = (0, 0, 0, 0, 0,
          1, 0, 0, 0, 0,
          1, 0, 0, 0, 0,)
 
-
 LCD_s = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          0, 1, 1, 1, 0,
@@ -188,7 +159,6 @@ LCD_s = (0, 0, 0, 0, 0,
          0, 1, 1, 1, 0,
          0, 0, 0, 0, 1,
          0, 1, 1, 1, 0, )
-
 
 LCD_t = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -198,7 +168,6 @@ LCD_t = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 0, 1, 0, 0, )
 
-
 LCD_u = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
@@ -206,7 +175,6 @@ LCD_u = (0, 0, 0, 0, 0,
          1, 0, 0, 1, 0,
          1, 0, 0, 1, 0,
          0, 1, 1, 1, 0, )
-
 
 LCD_v = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -216,7 +184,6 @@ LCD_v = (0, 0, 0, 0, 0,
          0, 1, 0, 1, 0,
          0, 0, 1, 0, 0,)
 
-
 LCD_w = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -224,7 +191,6 @@ LCD_w = (0, 0, 0, 0, 0,
          1, 0, 1, 0, 1,
          1, 0, 1, 0, 1,
          1, 1, 0, 1, 1,)
-
 
 LCD_x = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -234,7 +200,6 @@ LCD_x = (0, 0, 0, 0, 0,
          0, 1, 0, 1, 0,
          1, 0, 0, 0, 1, )
 
-
 LCD_y = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
          1, 0, 0, 0, 1,
@@ -242,7 +207,6 @@ LCD_y = (0, 0, 0, 0, 0,
          0, 0, 1, 0, 0,
          0, 1, 0, 0, 0,
          1, 0, 0, 0, 0, )
-
 
 LCD_z = (0, 0, 0, 0, 0,
          0, 0, 0, 0, 0,
@@ -256,34 +220,7 @@ LCD_z = (0, 0, 0, 0, 0,
 LCD_font_styles = (
     LCD_a, LCD_b, LCD_c, LCD_d, LCD_e, LCD_f, LCD_g, LCD_h, LCD_i, LCD_j,
     LCD_k, LCD_l, LCD_m, LCD_n, LCD_o, LCD_p, LCD_q, LCD_r, LCD_s, LCD_t,
-    LCD_u, LCD_v, LCD_w, LCD_x, LCD_y, LCD_z,
-)
-# a = 0
-# b = 1
-# c = 2
-# d = 3
-# e = 4
-# f = 5
-# g = 6
-# h = 7
-# i = 8
-# j = 9
-# k = 10
-# l = 11
-# m = 12
-# n = 13
-# o = 14
-# p = 15
-# q = 16
-# r = 17
-# s = 18
-# t = 19
-# u = 20
-# v = 21
-# w = 22
-# x = 23
-# y = 24
-# z = 25
+    LCD_u, LCD_v, LCD_w, LCD_x, LCD_y, LCD_z,)
 
 
 DARK_GRAY = (40, 40, 40)
@@ -298,8 +235,6 @@ WHITE = (250, 250, 250)
 class LCD_font_mc():
     def __init__(self, mc):
         self.mc = mc
-    # def __init__(self, screen):
-    #     self.screen = screen
 
 
     def init_col(self, BLOCK_SIZE=2,
@@ -350,28 +285,11 @@ class LCD_font_mc():
                     self.mc.setBlock(x, y, z,  param.AIR)
                 i += 1
 
-    def drawtext (self,text="kazuhiro", startcol=0, axis="xy"):
+    def drawtext (self,text="name", startcol=0, axis="xy"):
         for col, letter in enumerate(text, start=startcol):
-            # print(col, letter)
             code = ord(letter) - 0x61
             LCD_font_mc.update_col(self, col, code=code, axis="xy")
 
-
-            # i = 0
-            # for y in range(7):
-            #     for z in range(5):
-            #         z0 = self.Z_ORG + self.COL_INTV * col
-            #         y0 = self.Y_ORG
-            #         # ドットの原点座標
-            #         org1 = (z0 - z * self.BLOCK_INTV)
-            #         org2 = (y0 - y * self.BLOCK_INTV)
-            #         if LCD_font_styles[int(code)][i] == 1:
-            #             mc.setBlock(org1, org2, 0,  param.SEA_LANTERN_BLOCK)
-
-
-            #         else:
-            #             mc.setBlock(org1, org2, 0,  param.AIR)
-            #     i += 1
 
 
 
